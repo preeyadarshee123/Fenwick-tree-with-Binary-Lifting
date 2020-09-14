@@ -2,8 +2,9 @@ class Fenwick{
     public :
     int n;
     vector<int> bit;
-    void init(int n){
-        bit.assign(n+1,0);
+    void init(int sz){
+        bit.assign(sz+1,0);
+        n = sz+1;
     }
     void upd(int id){
         while(id <= n){
